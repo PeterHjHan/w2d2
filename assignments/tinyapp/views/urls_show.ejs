@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/_header %>
+  <title>TinyApp</title>
+</head>
+
+<body>
+  <% if(longURL) { %>
+    <%= longURL %>
+    <% } else { %>
+      <%= "Wrong URL type again" %>
+      <% }; %>
+
+</body>
+
+</html>

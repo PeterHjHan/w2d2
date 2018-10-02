@@ -1,21 +1,22 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <% include ../partials/_header %>
   <title>TinyApp</title>
 </head>
+
 <body>
-    <ul>
+  <ul>
+    <% for(let values in urls) { %>
+    <li>
+      <%= values %> -
+      <%=urls[values] %>
+    </li>
+    <% }; %>
 
-
-          <% for(let values in urls) { %>
-            <li><%= values %> - <%=urls[values] %></li>
-            <% }; %>
-    
-    </ul>
+  </ul>
 </body>
+
 </html>
-
-
-
